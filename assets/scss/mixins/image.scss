@@ -1,0 +1,39 @@
+@mixin before-img($display, $width, $height, $position) {
+  @at-root #{&}:before {
+    content: '';
+    display: $display;
+
+    @if $position==a {
+      position: absolute;
+    }
+
+    @if $position==r {
+      position: relative;
+    }
+
+    background-repeat: no-repeat;
+
+    width: $width;
+    height: $height;
+    @content;
+  }
+}
+
+@mixin after-img($display, $width, $height, $position) {
+  @at-root #{&}:after {
+    content: '';
+    display: $display;
+
+    @if $position==a {
+      position: absolute;
+    }
+
+    @if $position==r {
+      position: relative;
+    }
+
+    width: $width;
+    height: $height;
+    @content;
+  }
+}
