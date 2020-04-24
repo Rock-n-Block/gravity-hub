@@ -21,7 +21,8 @@
   --color-orange: #ff8e1e;
   --color-orange-accent: #e17f1d;
 
-  --container-width: 1200px;
+  // --container-width: 1200px;
+  --container-width: 1250px;
   --container-content-width: 1100px;
   --container-paddings-desctop: 10px 50px;
   --container-paddings-tablet: 10px 40px;

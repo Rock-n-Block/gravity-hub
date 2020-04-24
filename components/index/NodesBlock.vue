@@ -31,7 +31,7 @@
       left: 150px;
       z-index: 1;
 
-      @include b(1024) {
+      @include b(1440) {
         top: -120px;
         left: -130px;
       }

@@ -46,11 +46,10 @@ section.header {
 
     @include after-img(block, 100%, 100%, a) {
       background-image: url("~static/img/cosmos.svg");
-      background-size: 130%;
+      background-size: 80%;
       background-repeat: no-repeat;
-      bottom: -490px;
-      right: -490px;
-      z-index: -1;
+      left: 0px;
+      top: 40px;
 
       @include bb(endmobile, 0) {
         display: none;
@@ -60,11 +59,12 @@ section.header {
     .header {
       &-wrap {
         display: grid;
-        grid-template-columns: minmax(300px, 600px) minmax(300px, 580px);
+        grid-template-columns: minmax(300px, 600px) minmax(300px, 550px);
         justify-content: space-between;
         align-items: center;
         width: 100%;
         grid-gap: 20px;
+        z-index: 1;
 
         @include bb(tablet, 0) {
           grid-template-columns: minmax(300px, 1fr) minmax(300px, 350px);
