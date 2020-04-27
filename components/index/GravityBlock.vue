@@ -19,8 +19,6 @@ section.section-gravity-hub {
   justify-content: center;
   margin-top: -150px;
   z-index: 1;
-  background: url("~static/img/bg-graviry-hub.png") no-repeat right
-    center/contain;
 
   @include b(1024) {
     background: none;
@@ -38,7 +36,7 @@ section.section-gravity-hub {
     align-items: center;
     display: flex;
     z-index: 1;
-    background: url("~static/img/gravity-hub.png") no-repeat center / 100%;
+    background: url("~static/img/space.png") no-repeat center / 100%;
 
     @include bb(tablet, 0) {
       height: 1020px;

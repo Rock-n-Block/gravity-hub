@@ -2,7 +2,8 @@
   section.block.block-watching
     div.container-content
       div.block-image
-        img.block-image-wrap(src='img/watching_data-3.png', alt='watching data').
+        //- img.block-image-wrap(src='img/watching_data-3.png', alt='watching data')
+        img.block-image-wrap(src='img/watching-test.svg', alt='watching data')
         div.block-image-text
           div.block-image-text-wrap
             p.text All Gravity Hub nodes will have “data watchers” — modules for collecting various types of data, such as block headers and block height from other blockchains, exchange rates, etc.
@@ -21,14 +22,14 @@
 
 .block {
   &-watching {
-    background-image: url("~static/img/rm_02.png") no-repeat right 60px/200px;
+    background: url("~static/img/rm_01.png") no-repeat 92vw 100px/280px;
 
     @include b(1024) {
       background: none;
     }
 
     .container-content {
-      grid-template-columns: minmax(300px, 850px) minmax(300px, 390px);
+      grid-template-columns: minmax(300px, 800px) minmax(300px, 440px);
       max-width: 1310px;
 
       @include b(mobile) {
@@ -57,7 +58,7 @@
         &-text {
           background: url("~static/img/bg-title-watching.png") no-repeat -20px -20px/100%
             50%;
-          padding-right: 10px;
+          padding-right: 90px;
         }
       }
     }

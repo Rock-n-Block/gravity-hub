@@ -51,14 +51,14 @@ html {
     background: var(--overlay-color);
     height: 100%;
     display: block;
-    backdrop-filter: blur(122.323px);
+    // backdrop-filter: blur(122.323px);
   }
 }
 
 body {
   margin: 0;
   background-color: var(--bg-color);
-  backdrop-filter: blur(122.323px);
+  // backdrop-filter: blur(122.323px);
   font-family: "Poppins", sans-serif;
   cursor: default;
 }

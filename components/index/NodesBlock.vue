@@ -40,7 +40,8 @@
     .container-content {
       max-width: 1370px;
       grid-gap: 0;
-      grid-template-columns: minmax(300px, 600px) minmax(300px, 750px);
+      grid-template-columns: minmax(300px, 580px) minmax(300px, 750px);
+      margin-top: 50px;
 
       @include b(mobile) {
         display: flex !important;
