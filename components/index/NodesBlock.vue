@@ -12,7 +12,7 @@
             b Gravity Hub
             |  will also be connected to custom chains, which represent a new approach to blockchain customization. Waves Matter, our blockchain engine, can be assembled in any configuration for different purposes.
       div.block-image
-        img.block-image-wrap(src='img/nodes-new.png',alt='nodes')
+        img.block-image-wrap(src='img/nodes-3.png',alt='nodes')
 </template>
 
 <style lang="scss" scoped>
