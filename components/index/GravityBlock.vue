@@ -56,7 +56,7 @@ section.section-gravity-hub {
 
     .block-gravity-hub {
       width: 100%;
-      max-width: 525px;
+      max-width: 555px;
       z-index: 1;
 
       @include bb(tablet, 0) {
@@ -71,11 +71,14 @@ section.section-gravity-hub {
         margin-bottom: 20px;
         font-size: 17px;
         line-height: 28px;
+        opacity: 0.74;
+        padding: 0 35px;
 
         @include b(tablet) {
           margin-bottom: 15px;
           font-size: 14px;
           line-height: 20px;
+          padding: 0;
         }
 
         &-title {
@@ -84,6 +87,7 @@ section.section-gravity-hub {
           font-size: 48px;
           line-height: 50px;
           margin-bottom: 40px;
+          opacity: 0.8 !important;
 
           @include bb(tablet, 0) {
             font-size: 30px;
@@ -102,7 +106,7 @@ section.section-gravity-hub {
       .button {
         text-align: center;
         width: 100%;
-        max-width: 280px;
+        max-width: 270px;
         height: 50px;
         margin: 0 auto;
         color: white;
@@ -128,7 +132,7 @@ section.section-gravity-hub {
         width: 100%;
         z-index: 0;
         display: block;
-        margin-top: 0px;
+        margin-top: 30px;
         text-align: center;
 
         @include b(500) {

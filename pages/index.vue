@@ -65,6 +65,7 @@ section.block {
           font-weight: 200;
           font-size: 17px;
           line-height: 26px;
+          opacity: 0.74;
 
           @include b(mobile) {
             font-size: 14px;
@@ -81,6 +82,7 @@ section.block {
             font-size: 48px;
             margin-bottom: 40px;
             font-weight: bold;
+            opacity: 0.8 !important;
 
             @include b(mobile) {
               font-size: 40px;
@@ -99,6 +101,7 @@ section.block {
 
         &-text {
           width: 100%;
+          opacity: 0.74;
 
           &-wrap {
             @include b(mobile) {
