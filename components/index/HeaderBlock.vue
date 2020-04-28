@@ -180,7 +180,7 @@ section.header {
         }
 
         &-gravity {
-          background-image: url("~static/img/gravity-header.svg");
+          background-image: url("~static/img/gravity-new.png");
           background-position: left;
           background-size: contain;
           background-repeat: no-repeat;
