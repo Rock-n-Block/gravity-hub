@@ -133,8 +133,7 @@ b {
 
   &-login {
     color: var(--text-color);
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
 
     &:hover {
       color: var(--color-orange-accent);
@@ -157,7 +156,7 @@ b {
   height: 60px;
 
   @include b(550) {
-    width: 130px;
+    width: 120px;
     height: 55px;
   }
 }

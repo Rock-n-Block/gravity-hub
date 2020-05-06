@@ -1,0 +1,193 @@
+<template lang="pug">
+  section.header-menu-section(v-if="openMenu")
+    div.container
+      div.header-menu
+          div.header-menu-block
+              span.header-menu-block-title Product
+              a(href='/').header-menu-block-link Get started
+              a(href='/').header-menu-block-link Swap
+          div.header-menu-block
+              span.header-menu-block-title Company
+              a(href='/').header-menu-block-link about
+              a(href='/').header-menu-block-link FaQ
+              a(href='/').header-menu-block-link Blog
+              a(href='/').header-menu-block-link Contact us
+          div.header-menu-block
+              span.header-menu-block-title Community
+              a(href='/').header-menu-block-link Twitter
+              a(href='/').header-menu-block-link LinkedIn
+              a(href='/').header-menu-block-link Facebook
+              a(href='/').header-menu-block-link Medium
+              a(href='/').header-menu-block-link Telegram
+          div.header-menu-block
+              span.header-menu-block-title Resourses
+              a(href='/').header-menu-block-link Whitepaper
+              a(href='/').header-menu-block-link GitHub
+              a(href='/').header-menu-block-link Security audit
+              a(href='/').header-menu-block-link Privacy policy
+              a(href='/').header-menu-block-link Terms of Use
+      div.header-info
+          div.header-info-bottom
+              a(href='mailto:support@gravityhub.org').link support@gravityhub.org
+
+</template>
+
+
+<script>
+import Menu from "./Menu.vue";
+
+export default {
+  props: ["openMenu"]
+};
+</script>
+
+<style lang="scss" scoped>
+@import "../../assets/scss/mixins/media";
+
+.header-menu-section {
+  z-index: 99;
+  position: absolute;
+  top: 80px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 10px;
+
+  @include b(550) {
+    top: 70px;
+  }
+
+  .container {
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: minmax(300px, 580px) minmax(280px, 280px);
+    grid-gap: 30px;
+    justify-content: space-between;
+    background-color: rgba(18, 18, 25, 0.98);
+    padding: 80px 100px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(to right top, #82868f, #775338, #0b2591);
+      margin: -1px;
+    }
+
+    @include bb(tablet, 0) {
+      // grid-template-columns: repeat(2, 1fr);
+      padding: 40px 20px;
+    }
+
+    @include b(mobile) {
+      display: flex !important;
+      flex-direction: column;
+      padding: 20px 20px;
+      overflow-y: scroll;
+    }
+
+    .header {
+      &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &-bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .link {
+            font-weight: 200;
+            font-size: 23px;
+            line-height: 22px;
+            opacity: 0.8;
+            color: white;
+            margin-bottom: 15px;
+
+            @include b(mobile) {
+              margin: 20px 0;
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          .copyrights {
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 22px;
+            color: white;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      &-menu {
+        display: flex;
+        justify-content: space-between;
+
+        @include b(550) {
+          flex-direction: column;
+        }
+
+        // @include bb(tablet, 0) {
+        //   justify-content: center;
+        // }
+
+        &-block {
+          // &:nth-child(1),
+          // &:nth-child(2),
+          // &:nth-child(4) {
+          //   @include b(tablet) {
+          //     display: none;
+          //   }
+          // }
+
+          // &:nth-child(3) {
+          //   @include b(tablet) {
+          //     .footer-menu-block-title {
+          //       display: none;
+          //     }
+          //   }
+
+          //   @include b(mobile) {
+          //     display: none;
+          //   }
+          // }
+
+          * {
+            line-height: 22px;
+            margin-bottom: 10px;
+            display: block;
+            width: max-content;
+            color: white;
+          }
+
+          &-title {
+            font-weight: bold;
+            font-size: 14px;
+          }
+
+          &-link {
+            font-weight: 200;
+            font-size: 14px;
+            opacity: 0.8;
+
+            &:hover {
+              color: #ff8d1f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>
