@@ -3,7 +3,7 @@
     div.container
       span.logo
       div.nav
-        span.button.button-login Login
+        span.button.button-login(v-on:click="openLogin = !openLogin") Login
         div.language-select-block
           div.language-select
             span.language-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList }") {{ currLanguage }}
@@ -13,15 +13,17 @@
           span.menu-toggle-line
           span.menu-toggle-line
       <Menu v-bind:open-menu="openingMenu" />
-
+      <login-section @close-login="openLogin = !openLogin" v-bind:open-login="openLogin" />
 </template>
 
 <script>
 import Menu from "./Menu.vue";
+import LoginSection from "./LoginSection.vue";
 
 export default {
   data: function() {
     return {
+      openLogin: false,
       fixHeader: false,
       currLanguage: "Eng",
       openedLngList: false,
@@ -51,7 +53,8 @@ export default {
     };
   },
   components: {
-    Menu
+    Menu,
+    LoginSection
   },
   mounted() {
     window.addEventListener("scroll", event => {

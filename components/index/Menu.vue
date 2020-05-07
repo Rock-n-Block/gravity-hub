@@ -75,13 +75,12 @@ export default {
       bottom: 0;
       left: 0;
       z-index: -1;
-      border-radius: inherit; /* !importanté */
+      border-radius: inherit;
       background: linear-gradient(to right top, #82868f, #775338, #0b2591);
       margin: -1px;
     }
 
     @include bb(tablet, 0) {
-      // grid-template-columns: repeat(2, 1fr);
       padding: 40px 20px;
     }
 
@@ -138,31 +137,7 @@ export default {
           flex-direction: column;
         }
 
-        // @include bb(tablet, 0) {
-        //   justify-content: center;
-        // }
-
         &-block {
-          // &:nth-child(1),
-          // &:nth-child(2),
-          // &:nth-child(4) {
-          //   @include b(tablet) {
-          //     display: none;
-          //   }
-          // }
-
-          // &:nth-child(3) {
-          //   @include b(tablet) {
-          //     .footer-menu-block-title {
-          //       display: none;
-          //     }
-          //   }
-
-          //   @include b(mobile) {
-          //     display: none;
-          //   }
-          // }
-
           * {
             line-height: 22px;
             margin-bottom: 10px;
