@@ -3,9 +3,8 @@
     div.container-content
       div.block-gravity-hub
         h2.text.text-title Join Gravity Hub
-        p.text To become a Gravity Hub member, a user will need to install a Gravity Hub node and, for that purpose, to lock a certain sum of money on any of the supported public blockchain networks.
-        p.text You can lock a certain sum on the Ethereum network for a fixed period, using a special smart contract. Once you’ve done that, you’ll be able to collect revenues from users’ data requests, also enjoying Gravity Hub’s other advantages.
-        span.button.button-orange Install GH node
+        p.text Become a part of Gravity Hub community of developers and service providers!
+        span.button.button-orange Apply
         div.img-block
           img(src='img/cos.png', alt='cosmonaut')
           img(src='img/mob_space.png', alt='cosmonaut')
@@ -29,7 +28,8 @@ section.section-gravity-hub {
   }
 
   .container-content {
-    max-width: 1200px;
+    // max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     height: 1200px;
     justify-content: center;

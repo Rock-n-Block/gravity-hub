@@ -2,19 +2,17 @@
   section.block.block-watching
     div.container-content
       div.block-image
-        img.block-image-wrap(src='img/watching-new.png', alt='watching data')
-        //- img.block-image-wrap(src='img/watching-test.svg', alt='watching data')
+        img.block-image-wrap(src='img/watching.png', alt='watching data')
         div.block-image-text
           div.block-image-text-wrap
-            p.text All Gravity Hub nodes will have “data watchers” — modules for collecting various types of data, such as block headers and block height from other blockchains, exchange rates, etc.
-            p.text For each data watcher, a data profile will be set. For a, if a data watcher collects Ethereum block header data, this will need to be done with a certain frequency and reliability.
+            p.text In order to monetize your infrastructure on the Gravity Hub network, simply lock a deposit in any of the supported native tokens and run a GH node on your server.
       div.block-text
         h2.text.text-title
-          | Watching
+          | Monetization
           |
-          | data
-        p.text In addition to providing an interoperability protocol, Gravity Hub will help resolve the issue of obtaining information from the outside world, as it will facilitate access of all connected chains to data from outside the blockchain.
-        p.text A member of any network connected to Gravity Hub will be able to request oracle data from any information systems that have APIs — from Google to enterprise ERP systems.
+          | opportunities
+        p.text GH offers new monetization mechanics to node maintainers, alternatives to mining. Providers of GH services can monetize their data processing capabilities and get paid in the native tokens of platforms supported by GH.
+        p.text Consumers of data or event triggers from the nodes of Gravity Hub can pay for services by maintaining a stable balance on payment accounts of providers.
 </template>
 
 <style lang="scss" scoped>

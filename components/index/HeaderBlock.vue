@@ -7,8 +7,8 @@
             | Gravity
             |
             | Hub
-          span.text.text-accent Interoperability + Oracle chain
-          p.text Waves’ new blockchain-agnostic solution is a major step towards interoperability between different blockchains, while also helping resolve the issue of obtaining real-world data.
+          span.text.text-accent Blockchain communication net Oracles and Inter-Chain.
+          p.text All-encompassing, blockchain-agnostic oracle system that supports the communication of blockchains with the outside world, cross-chain communication, and integration of sidechains, within a single unified structure.
         div.header-block-gravity
 
 </template>

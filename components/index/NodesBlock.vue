@@ -3,17 +3,16 @@
     div.container-content
       div.block-text
         div.block-text-wrap
-          h2.text.text-title Nodes
+          h2.text.text-title Blockchain agnostic
           p.text
             b Gravity Hub’s nodes
-            |  will be able, for instance, to obtain block headers from the Ethereum network and send them to Waves Platform.
-          p.text If Ethereum block header data is available on Waves Platform, it will be possible to prove that a specific transaction has taken place on Ethereum.  To obtain that data, users will pay reasonable fees.
-          p.text
-            b Gravity Hub
-            |  will also be connected to custom chains, which represent a new approach to blockchain customization. Waves Matter, our blockchain engine, can be assembled in any configuration for different purposes.
+            |  is a middleware that establishes communication between blockchains amongst themselves and connects them to external world. GH has no native token, which makes it truly agnostic and reduces the complexity of the system.
+          p.text Gravity Hub provides straightforward interoperability at the levels of protocols and decentralized software, allowing dApps to easily exchange data across different blockchains.
+          p.text Gravity Hub is an open source software with transparent mechanisms for introducing changes and improvements. Join the open source developers team and contribute to the success of web3.0!
       div.block-image
-        img.block-image-wrap(src='img/nodes-3.png',alt='nodes')
+        img.block-image-wrap(src='img/nodes.png',alt='nodes')
 </template>
+
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
