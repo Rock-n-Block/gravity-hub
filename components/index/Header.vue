@@ -55,38 +55,12 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", event => {
-      console.log(window.scrollY);
-      if (window.scrollY > 55) this.fixHeader = true;
-      else this.fixHeader = false;
+      window.scrollY > 55 ? (this.fixHeader = true) : (this.fixHeader = false);
     });
   },
   methods: {
-    // scrollY: function(newValue) {
-    //   const rect = this.$el.getBoundingClientRect();
-    //   const newTop = this.scrollY + +this.top - this.originalTop;
-
-    //   if (newTop > 0) {
-    //     this.$set(this.myStyle, "top", `${newTop}px`);
-    //   } else {
-    //     this.$delete(this.myStyle, "top");
-    //   }
-
-    //   console.log(newValue);
-    // },
-
     setLanguage: function(event) {
-      // if (this.currLanguage) {
-      //   this.languagesList.map(lang => {
-      //     if (lang["lng"] === this.currLanguage) {
-      //       lang["active"] = true;
-      //     } else {
-      //       lang["active"] = false;
-      //     }
-      //   });
-      // }
       this.currLanguage = event["title"];
-      // window["jQuery"]["cookie"]("lng", this.currLanguage);
-
       this.openedLngList = false;
 
       this.languagesList.map(lang => {
