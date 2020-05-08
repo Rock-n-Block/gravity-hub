@@ -85,7 +85,7 @@ section.block {
             opacity: 0.8 !important;
 
             @include b(mobile) {
-              font-size: 40px;
+              font-size: 30px;
               margin-bottom: 30px;
             }
           }

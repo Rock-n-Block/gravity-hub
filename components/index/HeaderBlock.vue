@@ -32,8 +32,8 @@ section.header {
   }
 
   @include b(mobile) {
-    padding-top: 60px;
-    height: 650px;
+    padding-top: 90px;
+    height: 680px;
   }
 
   .container {
@@ -43,6 +43,7 @@ section.header {
     height: 100%;
     display: flex;
     z-index: 1;
+    max-width: 1300px;
 
     @include after-img(block, 100%, 100%, a) {
       background-image: url("~static/img/cosmos.svg");
@@ -78,7 +79,7 @@ section.header {
           display: grid;
           grid-template-columns: 1fr;
           grid-gap: 0;
-          grid-template-rows: 300px 250px;
+          grid-template-rows: 300px 300px;
         }
       }
 
@@ -139,7 +140,7 @@ section.header {
           }
 
           span {
-            font-size: 36px;
+            font-size: 28px;
             line-height: 40px;
 
             @include bb(tablet, 0) {
@@ -161,6 +162,7 @@ section.header {
             font-weight: 200;
             font-size: 17px;
             line-height: 27px;
+            opacity: 0.75;
 
             @include bb(tablet, 0) {
               font-size: 15px;
@@ -180,7 +182,7 @@ section.header {
         }
 
         &-gravity {
-          background-image: url("~static/img/gravity-new.png");
+          background-image: url("~static/img/gravity-header.svg");
           background-position: left;
           background-size: contain;
           background-repeat: no-repeat;
@@ -197,16 +199,24 @@ section.header {
             margin: 0 auto;
           }
 
-          @include after-img(block, 15px, 135px, a) {
+          @include after-img(block, 15px, 190px, a) {
             background-image: url("~static/img/gravity-header-text.svg");
             background-size: cover;
             background-repeat: no-repeat;
-            top: 35%;
+            top: 31%;
             z-index: 1;
             right: 0;
 
             @include b(1024) {
-              top: 30%;
+              top: 20%;
+            }
+
+            @include b(750) {
+              top: 20%;
+            }
+
+            @include b(550) {
+              top: 25px;
             }
           }
         }

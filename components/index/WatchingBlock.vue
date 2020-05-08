@@ -2,7 +2,7 @@
   section.block.block-watching
     div.container-content
       div.block-image
-        img.block-image-wrap(src='img/watching.png', alt='watching data')
+        img.block-image-wrap(src='img/watching.svg', alt='watching data')
         div.block-image-text
           div.block-image-text-wrap
             p.text In order to monetize your infrastructure on the Gravity Hub network, simply lock a deposit in any of the supported native tokens and run a GH node on your server.
@@ -54,9 +54,13 @@
         }
 
         &-text {
-          background: url("~static/img/bg-title-watching.png") no-repeat -20px -20px/100%
-            50%;
+          background: url("~static/img/bg-title-watching.svg") no-repeat -50px -100px/100%
+            100%;
           padding-right: 90px;
+
+          @include b(768) {
+            padding-right: 0px;
+          }
         }
       }
     }

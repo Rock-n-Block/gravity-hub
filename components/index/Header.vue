@@ -89,7 +89,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 50px 10px;
+  padding: 30px 10px;
   z-index: 3;
 
   @include bb(endmobile, 0) {
@@ -99,12 +99,14 @@ header {
   &.header-fixed {
     position: fixed;
     padding: 0;
+    background-color: #181a29;
   }
 
   .container {
     display: flex;
     justify-content: space-between;
     position: relative;
+    max-width: 1300px;
   }
 
   .nav {

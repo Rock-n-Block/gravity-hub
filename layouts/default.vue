@@ -7,7 +7,8 @@
 @import "../assets/scss/mixins/image.scss";
 
 :root {
-  --bg-color: #353540;
+  // --bg-color: #353540;
+  --bg-color: #181a29;
   --overlay-color: linear-gradient(
     180deg,
     rgba(24, 27, 44, 0.95) -5.12%,

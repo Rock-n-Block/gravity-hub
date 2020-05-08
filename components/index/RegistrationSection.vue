@@ -11,6 +11,7 @@
       hr
       div.registration-block-buttons
         span.button.button-registration(v-on:click="step--", v-if="step != 0") Back
+        span.button.button-registration(v-if="step === 0")
         span.button.button-registration(v-on:click="step++", v-if="step != 3") Next
         span.button.button-registration(v-if="step === 3",v-on:click="close()") Got it
 </template>
