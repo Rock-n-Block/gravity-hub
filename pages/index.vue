@@ -2,14 +2,11 @@
   <div>
     <Header />
     <header-block />
-    <section class="overlay">
-      <span class="overlay-bg"></span>
-      <nodes-block />
-      <watching-block />
-      <reaching-block />
-      <gravity-block />
-      <Footer />
-    </section>
+    <nodes-block />
+    <watching-block />
+    <reaching-block />
+    <gravity-block />
+    <Footer />
   </div>
 </template>
 
