@@ -2,6 +2,20 @@
   <nuxt />
 </template>
 
+<script>
+export default {
+  data() {
+    return {};
+  }
+  // mounted() {
+  //   this.$root.$on("modalOpen", function(state) {
+  //     console.log("open m", state);
+  //     this.modalOpen = true;
+  //   });
+  // }
+};
+</script>
+
 <style lang="scss">
 @import "../assets/scss/mixins/media.scss";
 @import "../assets/scss/mixins/image.scss";

@@ -61,6 +61,13 @@ export default {
       window.scrollY > 55 ? (this.fixHeader = true) : (this.fixHeader = false);
     });
   },
+  head() {
+    return {
+      bodyAttrs: {
+        class: this.openLogin ? "modal-open" : ""
+      }
+    };
+  },
   methods: {
     setLanguage: function(event) {
       this.currLanguage = event["title"];
@@ -77,6 +84,10 @@ export default {
         return b.active ? 1 : -1;
       });
     }
+    // loginModal: function(state) {
+    //   // this.$root.$emit("modalOpen", state);
+    //   this.openLogin = state;
+    // }
   }
 };
 </script>
