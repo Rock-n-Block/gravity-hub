@@ -64,7 +64,7 @@ export default {
   margin: 30px 0 20px 0;
 
   @include bb(endmobile, 0) {
-    height: 67vh;
+    height: 65vh;
     margin: 10px 0 10px 0;
     overflow-y: scroll;
     overflow-x: hidden;

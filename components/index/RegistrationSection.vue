@@ -120,7 +120,7 @@ export default {
 
   @include bb(endmobile, 0) {
     padding: 20px 20px;
-    height: 95vh;
+    height: 90vh;
     overflow: hidden;
   }
 }
