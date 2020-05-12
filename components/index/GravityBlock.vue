@@ -7,7 +7,7 @@
         span.button.button-orange Apply
         div.img-block
           img(src='img/cos.svg', alt='cosmonaut')
-          img(src='img/cos-mob.svg', alt='cosmonaut')
+          img(src='img/cos-mob.png', alt='cosmonaut')
 </template>
 
 <style lang="scss" scoped>
