@@ -80,16 +80,17 @@
         }
 
         &-text {
-          background: url("~static/img/bg-title-reaching.png") no-repeat center -40px/100%;
+          background: url("~static/img/bg-title-watching.svg") no-repeat center
+            50px/100%;
 
           @include b(mobile) {
-            background: url("~static/img/bg-title-reaching.png") no-repeat
-              center -20px/40%;
+            background: url("~static/img/bg-title-watching.svg") no-repeat
+              center 10px/40%;
           }
 
           @include bb(endmobile, 0) {
-            background: url("~static/img/bg-title-reaching.png") no-repeat
-              center -40px/100%;
+            background: url("~static/img/bg-title-watching.svg") no-repeat
+              center 0px/100%;
           }
         }
       }

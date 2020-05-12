@@ -113,16 +113,12 @@ export default {
         justify-content: flex-end;
 
         &-bottom {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-
           img {
             max-width: 210px;
             margin-bottom: 10px;
 
             @include bb(endmobile, 0) {
-              margin-bottom: 5px;
+              margin-bottom: 0px;
               margin-top: 30px;
             }
           }
@@ -134,6 +130,8 @@ export default {
             opacity: 0.8;
             color: white;
             margin-bottom: 15px;
+            width: 100%;
+            display: block;
 
             @include bb(endmobile, 0) {
               margin: 10px 0;

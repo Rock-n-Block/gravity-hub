@@ -58,25 +58,25 @@
 
       .block {
         &-text {
-          background: url("~static/img/bg-title-node.png") no-repeat center -10px/90%;
+          background: url("~static/img/bg-title-watching.svg") no-repeat center -10px/90%;
           padding-right: 70px;
           display: flex;
           justify-content: flex-end;
 
           @include bb(tablet, 0) {
-            background: url("~static/img/bg-title-node.png") no-repeat left
+            background: url("~static/img/bg-title-watching.svg") no-repeat left
               top/90%;
             padding-right: 20px;
           }
 
           @include b(mobile) {
-            background: url("~static/img/bg-title-node.png") no-repeat left
+            background: url("~static/img/bg-title-watching.svg") no-repeat left
               top/contain;
             padding-right: 0px;
           }
 
           @include bb(endmobile, 0) {
-            background: url("~static/img/bg-title-node.png") no-repeat -20px -30px/80%;
+            background: url("~static/img/bg-title-watching.svg") no-repeat -10px -10px/100%;
           }
 
           &-wrap {
