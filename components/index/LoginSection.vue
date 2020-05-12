@@ -36,6 +36,13 @@ export default {
 <style lang="scss" scope>
 @import "../../assets/scss/mixins/media";
 
+.close-section {
+  @include bb(endmobile, 0) {
+    top: 25px;
+    right: 15px;
+  }
+}
+
 .login-block {
   display: flex;
   flex-direction: column;
@@ -50,6 +57,11 @@ export default {
     font-size: 24px;
     color: white;
     font-weight: bold;
+
+    @include bb(endmobile, 0) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &-buttons {
@@ -101,6 +113,10 @@ export default {
 
     @include b(mobile) {
       padding: 20px 20px;
+    }
+
+    @include bb(endmobile, 0) {
+      padding: 40px 20px;
     }
   }
 }

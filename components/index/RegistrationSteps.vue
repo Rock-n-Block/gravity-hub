@@ -62,6 +62,13 @@ export default {
 
 .registration-steps {
   margin: 30px 0 20px 0;
+
+  @include bb(endmobile, 0) {
+    height: 67vh;
+    margin: 10px 0 10px 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 .registration-step {
@@ -82,6 +89,11 @@ export default {
     display: grid;
     grid-template-columns: 1fr minmax(150px, 185px);
     grid-gap: 40px;
+
+    @include bb(endmobile, 0) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
 
     .registration-step-buttons {
       margin: 0px;
@@ -108,6 +120,10 @@ export default {
     color: white;
     font-size: 18px;
     margin-bottom: 15px;
+
+    @include bb(endmobile, 0) {
+      font-size: 16px;
+    }
   }
 
   &-text {
@@ -118,6 +134,11 @@ export default {
     line-height: 1.7;
     width: 100%;
     display: block;
+
+    @include bb(endmobile, 0) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
   }
 
   &-browsers {
@@ -128,6 +149,10 @@ export default {
     width: 100%;
     margin: 25px auto;
     flex-wrap: wrap;
+
+    @include bb(endmobile, 0) {
+      margin: 20px auto;
+    }
 
     * {
       @include b(550) {
@@ -145,6 +170,7 @@ export default {
 
     @include b(750) {
       flex-direction: column;
+      align-items: baseline;
     }
 
     * {
@@ -179,6 +205,11 @@ export default {
     padding: 14px;
     color: white;
     margin: 25px auto;
+
+    @include bb(endmobile, 0) {
+      padding: 10px;
+      margin: 20px auto;
+    }
   }
 }
 </style>

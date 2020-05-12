@@ -3,10 +3,7 @@
     div.container-content
       div.container-content-wrap
         div.block-text
-          h2.text.text-title
-            | Trusted
-            |
-            | data hub
+          h2.text.text-title Trusted <br>data hub
           p.text The low-level building block of the Gravity Hub protocol is the data provision scheme that prescribes how to feed information from external sources to blockchain networks.
           p.text Unlike monolithic blockchain nodes, such as the nodes of Ethereum or Waves, Gravity Hub nodes are flexible and consist of multiple modules, supporting various types of services and data sources. At the same time, secure communication between all elements of the GH network is ensured through many consensus mechanisms.
         div.block-image
@@ -34,7 +31,7 @@
       }
 
       &-wrap {
-        grid-template-columns: minmax(300px, 360px) minmax(300px, 790px);
+        grid-template-columns: minmax(300px, 380px) minmax(300px, 770px);
         max-width: 1250px;
         width: 100%;
         display: grid;
@@ -45,6 +42,14 @@
           display: flex !important;
           flex-direction: column;
         }
+
+        .text-title {
+          br {
+            @include b(mobile) {
+              display: none;
+            }
+          }
+        }
       }
 
       .block {
@@ -52,19 +57,40 @@
 
         &-image {
           &-text {
-            margin-top: -100px;
+            margin-top: -10px;
             display: flex;
             justify-content: center;
 
             &-wrap {
               width: 100%;
-              max-width: 580px;
+              max-width: 700px;
+              padding-right: 80px;
+
+              @include b(tablet) {
+                max-width: 430px;
+                padding-right: 0px;
+              }
+
+              @include b(mobile) {
+                margin-top: 0;
+                max-width: 100%;
+              }
             }
           }
         }
 
         &-text {
           background: url("~static/img/bg-title-reaching.png") no-repeat center -40px/100%;
+
+          @include b(mobile) {
+            background: url("~static/img/bg-title-reaching.png") no-repeat
+              center -20px/40%;
+          }
+
+          @include bb(endmobile, 0) {
+            background: url("~static/img/bg-title-reaching.png") no-repeat
+              center -40px/100%;
+          }
         }
       }
     }

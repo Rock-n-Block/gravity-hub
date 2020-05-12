@@ -34,6 +34,10 @@
         top: -120px;
         left: -130px;
       }
+
+      @include bb(endmobile, 0) {
+        display: none;
+      }
     }
 
     .container-content {
@@ -46,6 +50,10 @@
         display: flex !important;
         flex-direction: column;
         padding: 0 20px;
+      }
+
+      @include bb(endmobile, 0) {
+        margin-top: 20px;
       }
 
       .block {
@@ -65,6 +73,10 @@
             background: url("~static/img/bg-title-node.png") no-repeat left
               top/contain;
             padding-right: 0px;
+          }
+
+          @include bb(endmobile, 0) {
+            background: url("~static/img/bg-title-node.png") no-repeat -20px -30px/80%;
           }
 
           &-wrap {

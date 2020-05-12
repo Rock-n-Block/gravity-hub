@@ -32,8 +32,13 @@ section.header {
   }
 
   @include b(mobile) {
-    padding-top: 90px;
-    height: 680px;
+    padding-top: 50px;
+    height: 550px;
+  }
+
+  @include bb(endmobile, 0) {
+    padding-top: 100px;
+    height: auto;
   }
 
   .container {
@@ -45,12 +50,21 @@ section.header {
     z-index: 1;
     max-width: 1300px;
 
+    @include bb(endmobile, 0) {
+      padding: 10px 20px;
+      position: relative;
+    }
+
     @include after-img(block, 100%, 100%, a) {
       background-image: url("~static/img/cosmos.svg");
       background-size: 80%;
       background-repeat: no-repeat;
       left: 0px;
       top: 40px;
+
+      @include b(mobile) {
+        background-size: 100%;
+      }
 
       @include bb(endmobile, 0) {
         display: none;
@@ -116,6 +130,10 @@ section.header {
 
           * {
             margin: 12px 0;
+
+            @include bb(endmobile, 0) {
+              margin: 10px 0;
+            }
           }
 
           h1 {
@@ -130,12 +148,12 @@ section.header {
 
             @include bb(mobile, 0) {
               font-size: 8vw;
-              line-height: 60px;
+              line-height: 55px;
             }
 
             @include bb(endmobile, 0) {
               font-size: 45px;
-              line-height: 40px;
+              line-height: 45px;
             }
           }
 
@@ -150,11 +168,12 @@ section.header {
 
             @include bb(mobile, 0) {
               font-size: 2.7vw;
-              line-height: 40px;
+              line-height: 22px;
             }
 
             @include bb(endmobile, 0) {
               font-size: 16px;
+              line-height: 23px;
             }
           }
 
@@ -171,7 +190,7 @@ section.header {
 
             @include bb(mobile, 0) {
               font-size: 1.8vw;
-              line-height: 22px;
+              line-height: 18px;
             }
 
             @include bb(endmobile, 0) {
@@ -184,13 +203,17 @@ section.header {
         &-gravity {
           background-image: url("~static/img/gravity-header.svg");
           background-position: left;
-          background-size: contain;
+          background-size: 86%;
           background-repeat: no-repeat;
           height: 500px;
           position: relative;
 
           @include bb(tablet, 0) {
             height: 300px;
+          }
+
+          @include b(mobile) {
+            background-size: 90%;
           }
 
           @include bb(endmobile, 0) {
@@ -207,12 +230,12 @@ section.header {
             z-index: 1;
             right: 0;
 
-            @include b(1024) {
+            @include b(tablet) {
               top: 20%;
             }
 
-            @include b(750) {
-              top: 20%;
+            @include b(mobile) {
+              top: 30%;
             }
 
             @include b(550) {

@@ -41,14 +41,25 @@
           z-index: 1;
 
           &-text {
-            margin-top: -80px;
+            margin-top: -10px;
             display: flex;
             justify-content: center;
             width: 100%;
 
             &-wrap {
               width: 100%;
-              max-width: 580px;
+              max-width: 660px;
+              padding-right: 55px;
+
+              @include b(tablet) {
+                max-width: 400px;
+                padding-right: 0px;
+              }
+
+              @include b(mobile) {
+                margin-top: 0;
+                max-width: 100%;
+              }
             }
           }
         }
@@ -58,8 +69,16 @@
             100%;
           padding-right: 90px;
 
-          @include b(768) {
+          @include b(mobile) {
             padding-right: 0px;
+            background: url("~static/img/bg-title-watching.svg") no-repeat
+              left/100% 100%;
+          }
+
+          @include bb(endmobile, 0) {
+            padding-right: 0px;
+            background: url("~static/img/bg-title-watching.svg") no-repeat left -80px/100%
+              100%;
           }
         }
       }

@@ -9,11 +9,17 @@
 :root {
   // --bg-color: #353540;
   --bg-color: #181a29;
-  --overlay-color: linear-gradient(
-    180deg,
-    rgba(24, 27, 44, 0.95) -5.12%,
-    #0d0f14 102.43%
-  );
+  --overlay-color: #181a29;
+  // --overlay-color: linear-gradient(
+  //   180deg,
+  //   rgba(24, 27, 44, 0.95) -5.12%,
+  //   #181a29 102.43%
+  // );
+  // --overlay-color: linear-gradient(
+  //   180deg,
+  //   rgba(24, 27, 44, 0.95) -5.12%,
+  //   #0d0f14 102.43%
+  // );
   --text-color: #ffffff;
   --title-color: #fafafa;
   --bold-color: #fafafa;

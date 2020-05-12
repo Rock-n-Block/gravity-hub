@@ -43,6 +43,13 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media";
 
+.close-section {
+  @include bb(endmobile, 0) {
+    top: 20px;
+    right: 10px;
+  }
+}
+
 .registration-block {
   display: flex;
   flex-direction: column;
@@ -63,6 +70,11 @@ export default {
     font-size: 24px;
     color: white;
     font-weight: bold;
+
+    @include bb(endmobile, 0) {
+      font-size: 16px;
+      margin-bottom: 1px;
+    }
   }
 
   &-buttons {
@@ -70,6 +82,10 @@ export default {
     justify-content: space-between;
     width: 100%;
     margin-top: 30px;
+
+    @include bb(endmobile, 0) {
+      margin-top: 1px;
+    }
   }
 
   .button {
@@ -100,6 +116,12 @@ export default {
 
   @include b(mobile) {
     padding: 20px 20px;
+  }
+
+  @include bb(endmobile, 0) {
+    padding: 20px 20px;
+    height: 95vh;
+    overflow: hidden;
   }
 }
 </style>

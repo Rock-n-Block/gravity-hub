@@ -42,6 +42,10 @@ export default {
 section.block {
   padding-top: 100px;
 
+  @include bb(endmobile, 0) {
+    padding-top: 10px;
+  }
+
   .container-content {
     display: grid;
     width: 100%;
@@ -95,6 +99,10 @@ section.block {
       &-image {
         z-index: 1;
 
+        @include bb(endmobile, 0) {
+          margin: 0 -15px;
+        }
+
         &-wrap {
           position: relative;
         }
@@ -124,6 +132,9 @@ section.block {
             @include bb(tablet, 0) {
               font-size: 15px;
               line-height: 24px;
+            }
+            @include bb(endmobile, 0) {
+              margin: 0 20px;
             }
           }
         }

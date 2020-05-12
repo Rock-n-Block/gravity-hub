@@ -1,34 +1,36 @@
 <template lang="pug">
   section.header-menu-section(v-if="openMenu")
     div.container
-      div.header-menu
-          div.header-menu-block
-              span.header-menu-block-title Product
-              a(href='/').header-menu-block-link Get started
-              a(href='/').header-menu-block-link Swap
-          div.header-menu-block
-              span.header-menu-block-title Company
-              a(href='/').header-menu-block-link about
-              a(href='/').header-menu-block-link FaQ
-              a(href='/').header-menu-block-link Blog
-              a(href='/').header-menu-block-link Contact us
-          div.header-menu-block
-              span.header-menu-block-title Community
-              a(href='/').header-menu-block-link Twitter
-              a(href='/').header-menu-block-link LinkedIn
-              a(href='/').header-menu-block-link Facebook
-              a(href='/').header-menu-block-link Medium
-              a(href='/').header-menu-block-link Telegram
-          div.header-menu-block
-              span.header-menu-block-title Resourses
-              a(href='/').header-menu-block-link Whitepaper
-              a(href='/').header-menu-block-link GitHub
-              a(href='/').header-menu-block-link Security audit
-              a(href='/').header-menu-block-link Privacy policy
-              a(href='/').header-menu-block-link Terms of Use
-      div.header-info
-          div.header-info-bottom
-              a(href='mailto:support@gravityhub.org').link support@gravityhub.org
+      div.content
+        div.header-menu
+            div.header-menu-block
+                span.header-menu-block-title Product
+                a(href='/').header-menu-block-link Get started
+                a(href='/').header-menu-block-link Swap
+            div.header-menu-block
+                span.header-menu-block-title Company
+                a(href='/').header-menu-block-link about
+                a(href='/').header-menu-block-link FaQ
+                a(href='/').header-menu-block-link Blog
+                a(href='/').header-menu-block-link Contact us
+            div.header-menu-block
+                span.header-menu-block-title Community
+                a(href='/').header-menu-block-link Twitter
+                a(href='/').header-menu-block-link LinkedIn
+                a(href='/').header-menu-block-link Facebook
+                a(href='/').header-menu-block-link Medium
+                a(href='/').header-menu-block-link Telegram
+            div.header-menu-block
+                span.header-menu-block-title Resourses
+                a(href='/').header-menu-block-link Whitepaper
+                a(href='/').header-menu-block-link GitHub
+                a(href='/').header-menu-block-link Security audit
+                a(href='/').header-menu-block-link Privacy policy
+                a(href='/').header-menu-block-link Terms of Use
+        div.header-info
+            div.header-info-bottom
+                img.image(src='img/gravity-footer-text.svg', alt='waves')
+                a(href='mailto:support@gravityhub.org').link support@gravityhub.org
 
 </template>
 
@@ -53,19 +55,15 @@ export default {
   right: 0;
   padding: 10px;
 
-  @include b(550) {
+  @include bb(endmobile, 0) {
     top: 70px;
   }
 
   .container {
     max-width: 1150px;
-    display: grid;
-    grid-template-columns: minmax(300px, 580px) minmax(280px, 280px);
-    grid-gap: 30px;
-    justify-content: space-between;
     background-color: rgba(18, 18, 25, 0.98);
-    padding: 80px 100px;
     position: relative;
+    padding: 80px 100px;
 
     &:before {
       content: "";
@@ -85,10 +83,27 @@ export default {
     }
 
     @include b(mobile) {
-      display: flex !important;
-      flex-direction: column;
       padding: 20px 20px;
-      overflow-y: scroll;
+    }
+
+    @include bb(endmobile, 0) {
+      height: 83vh;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(300px, 580px) minmax(280px, 280px);
+      grid-gap: 30px;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+
+      @include b(mobile) {
+        display: flex !important;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
     }
 
     .header {
@@ -102,6 +117,16 @@ export default {
           flex-direction: column;
           justify-content: space-between;
 
+          img {
+            max-width: 210px;
+            margin-bottom: 10px;
+
+            @include bb(endmobile, 0) {
+              margin-bottom: 5px;
+              margin-top: 30px;
+            }
+          }
+
           .link {
             font-weight: 200;
             font-size: 23px;
@@ -110,8 +135,12 @@ export default {
             color: white;
             margin-bottom: 15px;
 
-            @include b(mobile) {
-              margin: 20px 0;
+            @include bb(endmobile, 0) {
+              margin: 10px 0;
+            }
+
+            @include bb(endmobile, 0) {
+              font-size: 20px;
             }
 
             &:hover {

@@ -19,8 +19,9 @@ section.section-gravity-hub {
   margin-top: -150px;
   z-index: 1;
 
-  @include b(1024) {
+  @include b(tablet) {
     background: none;
+    margin-top: -80px;
   }
 
   @include b(mobile) {
@@ -38,7 +39,11 @@ section.section-gravity-hub {
     background: url("~static/img/space.svg") no-repeat center / 100%;
 
     @include bb(tablet, 0) {
-      height: 1020px;
+      height: 650px;
+    }
+
+    @include b(tablet) {
+      max-width: 650px;
     }
 
     @include b(mobile) {

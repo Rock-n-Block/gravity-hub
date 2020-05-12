@@ -61,11 +61,22 @@ footer {
       padding: 50px 20px;
     }
 
+    @include bb(endmobile, 0) {
+      padding: 10px 20px 50px 20px;
+    }
+
     .footer {
       &-info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        .logo {
+          @include bb(endmobile, 0) {
+            width: 150px;
+            height: 70px;
+          }
+        }
 
         &-bottom {
           display: flex;
