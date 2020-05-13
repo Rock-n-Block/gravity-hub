@@ -272,18 +272,5 @@ header {
 .language-select {
   position: relative;
   padding-right: 10px;
-
-  // @include b(1240) {
-  //   right: -50px;
-  // }
-
-  // @include b(750) {
-  //   right: 50px;
-  // }
-
-  // @include b(370) {
-  //   top: 5px;
-  //   right: 40px;
-  // }
 }
 </style>

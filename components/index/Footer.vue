@@ -39,6 +39,12 @@
 
 footer {
   z-index: 1;
+  margin-top: -100px;
+  position: relative;
+
+  @include b(tablet) {
+    margin-top: 0px;
+  }
 
   .container {
     max-width: 1300px;
