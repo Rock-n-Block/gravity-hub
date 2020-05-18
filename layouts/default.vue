@@ -297,6 +297,26 @@ b {
     }
   }
 
+  &-telegram-2 {
+    flex-direction: column;
+
+    @include before-img(block, 74px, 74px, r) {
+      background-image: url("~static/img/icons/telegram-2.svg");
+      background-size: cover;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-discord {
+    flex-direction: column;
+
+    @include before-img(block, 78px, 78px, r) {
+      background-image: url("~static/img/icons/discord.svg");
+      background-size: cover;
+      margin-bottom: 1px;
+    }
+  }
+
   &-telegram {
     @include before-img(block, 18px, 15px, r) {
       background-image: url("~static/img/icons/telegram.svg");

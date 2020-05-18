@@ -5,10 +5,18 @@
         span.close-section-item
         span.close-section-item
       div.login-block
-        span.login-block-title Connect to get started
-        div.login-block-buttons
-          span.button.button-waves-signer Waves Signer
-          span.button.button-waves-keeper(v-on:click="openRegistration = !openRegistration") Waves Keeper
+        //- span.login-block-title Connect to get started
+        span.login-block-title Our communities
+        hr
+        span.login-block-join-text Gravity Hub is coming soon!
+        span.login-block-join-text Join to talk with the team and follow the updates
+        div.login-block-join
+          a(href="https://t.me/gravityhuborg").button.button-telegram-2 Telegram
+          a(href="/").button.button-discord Discord
+        hr
+        //- div.login-block-buttons
+        //-   span.button.button-waves-signer Waves Signer
+        //-   span.button.button-waves-keeper(v-on:click="openRegistration = !openRegistration") Waves Keeper
     <registration-section @close-registration="openRegistration = !openRegistration" v-bind:open-registration="openRegistration" />
 </template>
 
@@ -49,11 +57,40 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  &-join {
+    display: flex;
+    margin: 40px -10px 0 -10px;
+
+    &-text {
+      color: white;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+    }
+
+    .button {
+      margin: 0 10px;
+      font-weight: normal;
+      font-size: 13px !important;
+      line-height: 21px;
+      color: #ffffff;
+    }
+  }
+
+  hr {
+    width: 100%;
+    margin: 30px 0;
+    border-color: #7b7f9e;
+  }
 
   &-title {
     text-align: center;
     display: block;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 0px;
     font-size: 24px;
     color: white;
     font-weight: bold;
@@ -70,6 +107,7 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 15px !important;
   }
 
   .button {
