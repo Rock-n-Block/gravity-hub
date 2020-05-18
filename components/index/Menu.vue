@@ -30,7 +30,7 @@
         div.header-info
             div.header-info-bottom
                 img.image(src='img/gravity-footer-text.svg', alt='waves')
-                a(href='mailto:support@gravityhub.org').link support@gravityhub.org
+                a(href='mailto:info@gravityhub.org').link info@gravityhub.org
 
 </template>
 
