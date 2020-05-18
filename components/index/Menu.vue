@@ -9,8 +9,8 @@
                 a(href='/').header-menu-block-link Swap
             div.header-menu-block
                 span.header-menu-block-title Company
-                a(href='/').header-menu-block-link about
-                a(href='/').header-menu-block-link FaQ
+                a(href='/').header-menu-block-link About
+                a(href='/').header-menu-block-link FAQ
                 a(href='/').header-menu-block-link Blog
                 a(href='/').header-menu-block-link Contact us
             div.header-menu-block
