@@ -60,6 +60,13 @@ export default {
     window.addEventListener("scroll", event => {
       window.scrollY > 55 ? (this.fixHeader = true) : (this.fixHeader = false);
     });
+
+    this.$root.$on("modalLogin", function(state) {
+      this.openLogin = false;
+      console.log("open login 1", this.openLogin);
+      this.openLogin = true;
+      console.log("open login 2", this.openLogin);
+    });
   },
   head() {
     return {

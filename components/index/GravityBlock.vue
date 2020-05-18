@@ -4,11 +4,27 @@
       div.block-gravity-hub
         h2.text.text-title Join Gravity Hub
         p.text Become a part of Gravity Hub community of developers and service providers!
-        span.button.button-orange Join us
+        span.button.button-orange(v-on:click="loginModal(true)") Join us
         div.img-block
           img(src='img/cos.svg', alt='cosmonaut')
           img(src='img/cos-mob.png', alt='cosmonaut')
 </template>
+
+<script>
+export default {
+  // mounted() {
+  //   this.$root.$on("modalOpen", function(state) {
+  //     console.log("open m", state);
+  //     this.modalOpen = true;
+  //   });
+  // },
+  methods: {
+    loginModal: function(state) {
+      this.$root.$emit("modalLogin", true);
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
