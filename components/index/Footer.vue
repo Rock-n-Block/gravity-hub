@@ -14,8 +14,8 @@
                 a(href='/').footer-menu-block-link Swap
             div.footer-menu-block
                 span.footer-menu-block-title Company
-                a(href='/').footer-menu-block-link about
-                a(href='/').footer-menu-block-link FaQ
+                a(href='/').footer-menu-block-link About
+                a(href='/').footer-menu-block-link FAQ
                 a(href='/').footer-menu-block-link Blog
                 a(href='/').footer-menu-block-link Contact us
             div.footer-menu-block
