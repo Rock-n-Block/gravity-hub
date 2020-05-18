@@ -3,7 +3,7 @@
     div.container
       span.logo
       div.nav
-        span.button.button-login(v-on:click="openLogin = !openLogin") Login
+        span.button.button-login(v-on:click="openLogin = !openLogin") Join us
         div.language-select-block
           div.language-select
             span.language-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList }") {{ currLanguage }}

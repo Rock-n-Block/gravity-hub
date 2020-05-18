@@ -4,7 +4,7 @@
       div.block-gravity-hub
         h2.text.text-title Join Gravity Hub
         p.text Become a part of Gravity Hub community of developers and service providers!
-        span.button.button-orange Apply
+        span.button.button-orange Join us
         div.img-block
           img(src='img/cos.svg', alt='cosmonaut')
           img(src='img/cos-mob.png', alt='cosmonaut')

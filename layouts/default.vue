@@ -21,19 +21,8 @@ export default {
 @import "../assets/scss/mixins/image.scss";
 
 :root {
-  // --bg-color: #353540;
   --bg-color: #181a29;
   --overlay-color: #181a29;
-  // --overlay-color: linear-gradient(
-  //   180deg,
-  //   rgba(24, 27, 44, 0.95) -5.12%,
-  //   #181a29 102.43%
-  // );
-  // --overlay-color: linear-gradient(
-  //   180deg,
-  //   rgba(24, 27, 44, 0.95) -5.12%,
-  //   #0d0f14 102.43%
-  // );
   --text-color: #ffffff;
   --title-color: #fafafa;
   --bold-color: #fafafa;
@@ -41,8 +30,6 @@ export default {
   --like-color: #ff0000;
   --color-orange: #ff8e1e;
   --color-orange-accent: #e17f1d;
-
-  // --container-width: 1200px;
   --container-width: 1250px;
   --container-content-width: 1100px;
   --container-paddings-desctop: 10px 50px;
@@ -72,14 +59,12 @@ html {
     background: var(--overlay-color);
     height: 100%;
     display: block;
-    // backdrop-filter: blur(122.323px);
   }
 }
 
 body {
   margin: 0;
   background-color: var(--bg-color);
-  // backdrop-filter: blur(122.323px);
   font-family: "Poppins", sans-serif;
   cursor: default;
 }
@@ -397,7 +382,8 @@ span {
 .fade-leave-active {
   transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
