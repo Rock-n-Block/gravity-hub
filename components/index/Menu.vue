@@ -11,16 +11,16 @@
                 span.header-menu-block-title Company
                 a(href='/').header-menu-block-link About
                 a(href='/').header-menu-block-link FAQ
-                a(href='/').header-menu-block-link Blog
+                a(href='https://blog.wavesplatform.com/gravity-hub').header-menu-block-link Blog
                 a(href='/').header-menu-block-link Contact us
             div.header-menu-block
                 span.header-menu-block-title Community
-                a(href='/').header-menu-block-link Twitter
-                a(href='/').header-menu-block-link LinkedIn
-                a(href='/').header-menu-block-link Facebook
-                a(href='/').header-menu-block-link Medium
-                a(href='/').header-menu-block-link Telegram
-                a(href='/').header-menu-block-link Reddit
+                a(href='https://twitter.com/gravity_hub').header-menu-block-link Twitter
+                a(href='https://www.linkedin.com/company/gravity-hub/?viewAsMember=true').header-menu-block-link LinkedIn
+                a(href='https://www.facebook.com/GravityHubOrg').header-menu-block-link Facebook
+                a(href='https://medium.com/@gravity_hub').header-menu-block-link Medium
+                a(href='https://t.me/gravityhuborg').header-menu-block-link Telegram
+                a(href='https://www.reddit.com/user/GravityHubOrg').header-menu-block-link Reddit
             div.header-menu-block
                 span.header-menu-block-title Resourses
                 a(href='/').header-menu-block-link Whitepaper
