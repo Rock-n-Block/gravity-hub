@@ -20,6 +20,7 @@
                 a(href='/').header-menu-block-link Facebook
                 a(href='/').header-menu-block-link Medium
                 a(href='/').header-menu-block-link Telegram
+                a(href='/').header-menu-block-link Reddit
             div.header-menu-block
                 span.header-menu-block-title Resourses
                 a(href='/').header-menu-block-link Whitepaper

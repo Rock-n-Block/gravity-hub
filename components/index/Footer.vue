@@ -25,6 +25,7 @@
                 a(href='/').footer-menu-block-link Facebook
                 a(href='/').footer-menu-block-link Medium
                 a(href='/').footer-menu-block-link Telegram
+                a(href='/').footer-menu-block-link Reddit
             div.footer-menu-block
                 span.footer-menu-block-title Resourses
                 a(href='/').footer-menu-block-link Whitepaper
