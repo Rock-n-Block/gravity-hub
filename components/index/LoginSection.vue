@@ -98,7 +98,7 @@ export default {
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: #353540fc;
+  background-color: #0f1017f5;
 
   .container {
     max-width: 1150px;
