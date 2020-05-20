@@ -12,7 +12,7 @@
         span.login-block-join-text Join to talk with the team and follow the updates
         div.login-block-join
           a(href="https://t.me/gravityhuborg").button.button-telegram-2 Telegram
-          a(href="/").button.button-discord Discord
+          a(href="https://discord.gg/RbfvnW").button.button-discord Discord
         hr
         //- div.login-block-buttons
         //-   span.button.button-waves-signer Waves Signer
