@@ -40,7 +40,7 @@
 
 footer {
   z-index: 1;
-  margin-top: -100px;
+  margin-top: -300px;
   position: relative;
 
   @include b(tablet) {
