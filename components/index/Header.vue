@@ -139,10 +139,19 @@ header {
     cursor: pointer;
 
     &.opened-menu {
-      .menu-toggle-line:nth-child(1) {
-        transform: rotate(-45deg);
-        margin: 0;
-        margin-bottom: -2px;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 30px;
+        height: 25px;
+        background-color: transparent;
+        z-index: 1;
+        top: -12px;
+        left: 3px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
       }
 
       .menu-toggle-line:nth-child(2) {
